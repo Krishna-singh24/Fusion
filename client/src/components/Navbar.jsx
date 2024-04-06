@@ -23,11 +23,14 @@ const Navbar = () => {
         <nav aria-label="Global">
           <ul class="flex items-center gap-6 text-sm">
             <li>
+              <Link class="text-gray-500 transition hover:text-gray-500/75" to="/"> Home </Link>
+            </li>
+            <li>
               <Link class="text-gray-500 transition hover:text-gray-500/75" to="/about"> About </Link>
             </li>
 
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
+              <Link class="text-gray-500 transition hover:text-gray-500/75" to="/contact"> Contact </Link>
             </li>
 
             <li>
@@ -51,20 +54,20 @@ const Navbar = () => {
 
       <div class="flex items-center gap-4">
         <div class="sm:flex sm:gap-4">
-          <a
+          <Link
             class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-            href="#"
+            to="/login"
           >
             Login
-          </a>
+          </Link>
 
           <div class="hidden sm:flex">
-            <a
+            <Link
               class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-              href="#"
+              to="/signup"
             >
-              Register
-            </a>
+              Signup
+            </Link>
           </div>
         </div>
 
