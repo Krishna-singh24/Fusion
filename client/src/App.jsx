@@ -7,6 +7,8 @@ import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Error from './pages/Error'
+import Overview from './pages/Overview'
+import Feedback from './pages/Feedback'
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
@@ -22,6 +24,8 @@ const App = () => {
                 <Route path={'/contact'} element={<Contact/>}/>
                 <Route path={'/login'} element={<Login/>}/>
                 <Route path={'/signup'} element={<Signup/>}/>
+                <Route path={'/overview'} element={<Overview/>}/>
+                <Route path={'/feedback'} element={<Feedback/>}/>
                 <Route path={'*'} element={<Error/>}/>
 
             </Routes>
