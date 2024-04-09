@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import {z} from "zod";
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
+import axios from "axios";
+
 const schema = z.object({
     email: z.string().email('Invalid email'),
     password: z.string().min(8, 'Password must be at least 8 characters'),
@@ -13,8 +15,9 @@ const Login = () => {
         resolver: zodResolver(schema),
     });
 
-    const onSubmit = (data) => {
-        console.log(data);
+    const onSubmit = async (data) => {
+       const response = await axios.post('http://localhost:8080/login', data);
+       console.log(response.data);
     }
     return (
 
