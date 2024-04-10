@@ -136,3 +136,5 @@ dist
 # RSA keys
 private.key
 public.key
+
+.env
