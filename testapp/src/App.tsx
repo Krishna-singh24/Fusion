@@ -11,14 +11,14 @@ import Alerts from './components/Alerts'
 const App = () => {
   return (
     <div>
-        <Button>nice</Button>
-        <Search>search</Search>
+        <Button color='danger'>nice</Button>
+        {/* <Search>search</Search>
         <Input></Input>
         <Card></Card>
         <Select></Select>
         <Checkbox></Checkbox>
         <Image></Image>
-        <Alerts></Alerts>
+        <Alerts></Alerts> */}
         
     </div>
   )
