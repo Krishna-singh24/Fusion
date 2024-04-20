@@ -6,6 +6,7 @@ import Card from './components/Card'
 import Select from './components/Select'
 import Checkbox from './components/Checkbox'
 import Image from './components/Image'
+import Alerts from './components/Alerts'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Select></Select>
         <Checkbox></Checkbox>
         <Image></Image>
+        <Alerts></Alerts>
         
     </div>
   )

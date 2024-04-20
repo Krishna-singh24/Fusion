@@ -1,2 +1,15 @@
 // import './statCard/statCard.css';
-export { default as StatCard } from "./statCard";
+export { default as Button } from "./Button";
+export { default as Card} from "./Card";
+export { default as Image} from "./Image";
+export { default as Checkbox} from "./Checkbox";
+export { default as Radio} from "./Radio";
+export { default as Alerts} from "./Alerts";
+export { default as Avatar} from "./Avatar";
+export { default as Carousal} from "./Carousal";
+export { default as Footer} from "./Footer";
+export { default as Input} from "./Input";
+export { default as LoginForm} from "./Login";
+export { default as Navbar} from "./Navbar";
+export { default as Select} from "./Select";
+export { default as Tables} from "./Tables";
