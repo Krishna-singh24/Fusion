@@ -11,9 +11,10 @@ import Alerts from './components/Alerts'
 const App = () => {
   return (
     <div>
-        <Button color='danger'>nice</Button>
+        <Button color='danger' padding='xs' >nice</Button>
+        <Input padding='sm'></Input>
         {/* <Search>search</Search>
-        <Input></Input>
+        
         <Card></Card>
         <Select></Select>
         <Checkbox></Checkbox>

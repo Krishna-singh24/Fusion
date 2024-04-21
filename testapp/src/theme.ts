@@ -19,7 +19,12 @@ const tailwindThemeClasses = {
         sm: 'size-2.5',
         md: 'size-3',
         lg: 'size-4',
-        xl: 'size-5',
+        xl: 'size-24',
+
+    },
+    paddings:{
+      xs:'1rem 1.75rem',
+      sm:' 1.25rem 2rem'
 
     },
 
@@ -27,6 +32,7 @@ const tailwindThemeClasses = {
         light: 'text-white',
         dark: 'text-black',
     },
+    
 }
 
 const cssColors = {
@@ -48,4 +54,4 @@ const alignmentClasses = {
 
 }
 
-export { tailwindThemeClasses, alignmentClasses, cssColors };
+export { tailwindThemeClasses, alignmentClasses, cssColors ,};
