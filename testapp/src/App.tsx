@@ -6,21 +6,25 @@ import Card from './components/Card'
 import Select from './components/Select'
 import Checkbox from './components/Checkbox'
 import Image from './components/Image'
-import Alerts from './components/Alerts'
+import Alert from './components/Alert'
 
 const App = () => {
   return (
-    <div>
-        <Button color='danger' padding='xs' >nice</Button>
-        <Input padding='sm'></Input>
-        {/* <Search>search</Search>
-        
-        <Card></Card>
-        <Select></Select>
-        <Checkbox></Checkbox>
-        <Image></Image>
-        <Alerts></Alerts> */}
-        
+    <div className=''>
+      {/* <Button color='danger' padding='xs' >nice</Button> */}
+      <Input />
+      {/* <Search>search</Search> */}
+
+      {/* <Card></Card> */}
+      {/* <Select></Select> */}
+      {/* <Checkbox></Checkbox> */}
+      {/* <Image></Image> */}
+      <div style={{ width: 600 }}>
+        {/* <Alert title='Some title'
+          description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
+        /> */}
+      </div>
+
     </div>
   )
 }

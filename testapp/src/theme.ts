@@ -45,6 +45,16 @@ const cssColors = {
         warning: '#F59E0B',
         success: '#047857',
         secondary: '#F59E0B',
+    },
+    classes: {
+        primary: 'bg-blue-600 text-white',
+        light: 'bg-gray-200 text-black',
+        dark: 'bg-gray-800 text-white',
+        info: 'bg-blue-400 text-white',
+        danger: 'bg-red-600 text-white',
+        warning: 'bg-yellow-400 text-white',
+        success: 'bg-green-600 text-white',
+        secondary: 'bg-yellow-400 text-white',
     }
 }
 const alignmentClasses = {
