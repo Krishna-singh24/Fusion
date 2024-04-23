@@ -20,12 +20,20 @@ const tailwindThemeClasses = {
         md: 'size-3',
         lg: 'size-4',
         xl: 'size-24',
-
+    },
+    textSizes: {
+        xs: 'text-xs',
+        sm: 'text-sm',
+        md: 'text-md',
+        lg: 'text-lg',
+        xl: 'text-xl',
     },
     paddings: {
-        xs: '1rem 1.75rem',
-        sm: ' 1.25rem 2rem'
-
+        xs: 'p-1',
+        sm: 'p-2',
+        md: 'p-3',
+        lg: 'p-4',
+        xl: 'p-6',
     },
 
     textcolor: {
@@ -49,14 +57,13 @@ const cssColors = {
 }
 
 const colorClasses = {
-    primary: 'bg-blue-600 text-white',
-    light: 'bg-gray-200 text-black',
-    dark: 'bg-gray-800 text-white',
-    info: 'bg-blue-400 text-white',
-    danger: 'bg-red-600 text-white',
-    warning: 'bg-yellow-400 text-white',
-    success: 'bg-green-600 text-white',
-    secondary: 'bg-yellow-400 text-white',
+    primary: 'blue-600',
+    secondary: 'purple-600',
+    success: 'green-600',
+    danger: 'red-600',
+    warning: 'yellow-600',
+    info: 'blue-600',
+    light: 'slate-300'
 }
 const alignmentClasses = {
     left: 'text-left',
@@ -66,25 +73,27 @@ const alignmentClasses = {
 }
 interface VariantClass {
     filled: string;
-    outline: string;
+    outlined: string;
     default: string;
 }
 
-const variantClass = (variant: keyof VariantClass, backgroundColor: string, textColor: string): string => {
+const variantClass = (variant: keyof VariantClass, colorClass: string): string => {
     let classValue = '';
     switch (variant) {
         case 'filled':
-            classValue = `bg-${backgroundColor} text-${textColor}`;
+            classValue = `bg-${colorClass} text-white`;
             break;
-        case 'outline':
-            classValue = `border border-${backgroundColor} text-${textColor}`;
+        case 'outlined':
+            classValue = `border-2 border-${colorClass} text-${colorClass}`;
             break;
         case 'default':
-            classValue = `bg-transparent text-${textColor}`;
+            classValue = `bg-${colorClass} text-black`;
             break;
         default:
             break;
     }
+    // console.log(classValue);
+    
     return classValue;
 }
 

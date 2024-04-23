@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className=''>
       {/* <Button color='danger' padding='xs' >nice</Button> */}
-      <Input />
+      <Input variant='outlined' label='Some label' radius='xl' />
       {/* <Search>search</Search> */}
 
       {/* <Card></Card> */}
