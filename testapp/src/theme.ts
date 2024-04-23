@@ -22,9 +22,9 @@ const tailwindThemeClasses = {
         xl: 'size-24',
 
     },
-    paddings:{
-      xs:'1rem 1.75rem',
-      sm:' 1.25rem 2rem'
+    paddings: {
+        xs: '1rem 1.75rem',
+        sm: ' 1.25rem 2rem'
 
     },
 
@@ -32,7 +32,7 @@ const tailwindThemeClasses = {
         light: 'text-white',
         dark: 'text-black',
     },
-    
+
 }
 
 const cssColors = {
@@ -46,16 +46,17 @@ const cssColors = {
         success: '#047857',
         secondary: '#F59E0B',
     },
-    classes: {
-        primary: 'bg-blue-600 text-white',
-        light: 'bg-gray-200 text-black',
-        dark: 'bg-gray-800 text-white',
-        info: 'bg-blue-400 text-white',
-        danger: 'bg-red-600 text-white',
-        warning: 'bg-yellow-400 text-white',
-        success: 'bg-green-600 text-white',
-        secondary: 'bg-yellow-400 text-white',
-    }
+}
+
+const colorClasses = {
+    primary: 'bg-blue-600 text-white',
+    light: 'bg-gray-200 text-black',
+    dark: 'bg-gray-800 text-white',
+    info: 'bg-blue-400 text-white',
+    danger: 'bg-red-600 text-white',
+    warning: 'bg-yellow-400 text-white',
+    success: 'bg-green-600 text-white',
+    secondary: 'bg-yellow-400 text-white',
 }
 const alignmentClasses = {
     left: 'text-left',
@@ -63,5 +64,28 @@ const alignmentClasses = {
     right: 'text-right'
 
 }
+interface VariantClass {
+    filled: string;
+    outline: string;
+    default: string;
+}
 
-export { tailwindThemeClasses, alignmentClasses, cssColors ,};
+const variantClass = (variant: keyof VariantClass, backgroundColor: string, textColor: string): string => {
+    let classValue = '';
+    switch (variant) {
+        case 'filled':
+            classValue = `bg-${backgroundColor} text-${textColor}`;
+            break;
+        case 'outline':
+            classValue = `border border-${backgroundColor} text-${textColor}`;
+            break;
+        case 'default':
+            classValue = `bg-transparent text-${textColor}`;
+            break;
+        default:
+            break;
+    }
+    return classValue;
+}
+
+export { tailwindThemeClasses, alignmentClasses, cssColors, variantClass, colorClasses};
