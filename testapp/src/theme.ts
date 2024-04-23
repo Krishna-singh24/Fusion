@@ -21,6 +21,13 @@ const tailwindThemeClasses = {
         lg: 'size-4',
         xl: 'size-24',
     },
+    imageSizes: {
+        xs: 'h-8 w-8',
+        sm: 'h-12 w-12',
+        md: 'h-16 w-16',
+        lg: 'h-24 w-24',
+        xl: 'h-32 w-32',
+    },
     textSizes: {
         xs: 'text-xs',
         sm: 'text-sm',

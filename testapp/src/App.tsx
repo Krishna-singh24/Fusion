@@ -7,15 +7,20 @@ import Select from './components/Select'
 import Checkbox from './components/Checkbox'
 import Image from './components/Image'
 import Alert from './components/Alert'
+import Avatar from './components/Avatar'
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='p-32'>
+      {/* <Avatar size='xl'>sj</Avatar> */}
+      {/* <Avatar image='/avatar.webp' /> */}
       {/* <Button color='danger' padding='xs' >nice</Button> */}
-      <Input variant='outlined' label='Some label' radius='xl' />
+      {/* <Input variant='outlined' label='Some label' radius='xl' /> */}
       {/* <Search>search</Search> */}
 
-      {/* <Card></Card> */}
+      <Card>
+        <h1>Something happened</h1>
+      </Card>
       {/* <Select></Select> */}
       {/* <Checkbox></Checkbox> */}
       {/* <Image></Image> */}
