@@ -18,11 +18,19 @@ const App = () => {
       {/* <Input variant='outlined' label='Some label' radius='xl' /> */}
       {/* <Search>search</Search> */}
 
-      <Card>
-        <h1>Something happened</h1>
-      </Card>
+      {/* <Card withBorder>
+        <Card.Header>
+          <h1 className='text-lg'>Some title</h1>
+        </Card.Header>
+        <Card.Body>
+          <p className='text-sm'>Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.</p>
+        </Card.Body>
+        <Card.Footer>
+          <Button color='danger'>Delete</Button>
+        </Card.Footer>
+      </Card> */}
       {/* <Select></Select> */}
-      {/* <Checkbox></Checkbox> */}
+      {/* <Checkbox label='Remember Me' color='warning' /> */}
       {/* <Image></Image> */}
       <div style={{ width: 600 }}>
         {/* <Alert title='Some title'

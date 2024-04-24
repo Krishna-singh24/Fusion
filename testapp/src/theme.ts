@@ -21,6 +21,13 @@ const tailwindThemeClasses = {
         lg: 'size-4',
         xl: 'size-24',
     },
+    checkboxsizes: {
+        xs: 'h-4 w-4',
+        sm: 'h-5 w-5',
+        md: 'h-6 w-6',
+        lg: 'h-7 w-7',
+        xl: 'h-8 w-8',
+    },
     imageSizes: {
         xs: 'h-8 w-8',
         sm: 'h-12 w-12',
@@ -44,9 +51,36 @@ const tailwindThemeClasses = {
     },
 
     textcolor: {
-        light: 'text-white',
-        dark: 'text-black',
+        primary: 'text-blue-600',
+        secondary: 'text-purple-600',
+        success: 'text-green-600',
+        danger: 'text-red-600',
+        warning: 'text-yellow-600',
+        info: 'text-blue-600',
+        light: 'text-slate-300',
+        dark: 'text-gray-800'
     },
+
+    ringColors: {
+        primary: 'ring-blue-300',
+        secondary: 'ring-purple-300',
+        success: 'ring-green-300',
+        danger: 'ring-red-300',
+        warning: 'ring-yellow-300',
+        info: 'ring-blue-300',
+        light: 'ring-slate-300',
+        dark: 'ring-gray-800'
+    },
+    borderColors: {
+        primary: 'border-blue-600',
+        secondary: 'border-purple-600',
+        success: 'border-green-600',
+        danger: 'border-red-600',
+        warning: 'border-yellow-600',
+        info: 'border-blue-600',
+        light: 'border-slate-300',
+        dark: 'border-gray-800'
+    }
 
 }
 
@@ -100,8 +134,8 @@ const variantClass = (variant: keyof VariantClass, colorClass: string): string =
             break;
     }
     // console.log(classValue);
-    
+
     return classValue;
 }
 
-export { tailwindThemeClasses, alignmentClasses, cssColors, variantClass, colorClasses};
+export { tailwindThemeClasses, alignmentClasses, cssColors, variantClass, colorClasses };
