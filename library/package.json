@@ -1,7 +1,7 @@
 {
   "name": "fusion-reactui",
-  "version": "1.0.0",
-  "description": "Easy Dashboard Library for React",
+  "version": "1.0.3",
+  "description": "React UI Component Library for React",
   "scripts": {
     "rollup": "rollup -c",
     "build": "rollup -c --bundleConfigAsCjs"
@@ -21,7 +21,7 @@
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.37",
     "autoprefixer": "^10.4.19",
-    "clsx": "^2.1.0",
+    "clsx": "^2.1.1",
     "postcss": "^8.3.1",
     "rollup": "^4.5.0",
     "rollup-plugin-dts": "^6.1.0",

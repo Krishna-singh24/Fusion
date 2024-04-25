@@ -26,7 +26,7 @@ const Input = ({ id,
 }: InputProps) => {
   return (
     <div>
-      <label htmlFor={id} className={clsx( tailwindThemeClasses.textSizes[size] ,"block text-gray-700 dark:text-gray-300")}>
+      <label htmlFor={id} className={clsx(tailwindThemeClasses.textSizes[size], "block text-gray-700 dark:text-gray-300")}>
         {label}
       </label>
       <input
@@ -37,7 +37,7 @@ const Input = ({ id,
         className={clsx(variantClass(
           variant,
           'slate-800'
-        ), tailwindThemeClasses.paddings[size], tailwindThemeClasses.radius[radius], tailwindThemeClasses.textSizes[size] , "block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500")} />
+        ), tailwindThemeClasses.paddings[size], tailwindThemeClasses.radius[radius], tailwindThemeClasses.textSizes[size], "block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500")} />
     </div>
   )
 }

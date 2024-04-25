@@ -1,32 +1,45 @@
-import React from 'react';
+import React from 'react'
+import { colorClasses, tailwindThemeClasses, variantClass } from '../../themes/themes';
+import clsx from 'clsx'
 
 interface InputProps {
-  // Optional props for customization can be added here
-  //  - label: string (for labeling the input)
-} // Empty interface for now
+  color?: 'primary' | 'light' | 'dark' | 'info' | 'danger' | 'warning' | 'success' | 'secondary'
+  variant?: 'default' | 'filled' | 'outlined'
+  padding?: 'xs' | 'sm'
+  radius?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'search'
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  disabled?: boolean
+  id?: string
+  label?: string
+  placeholder?: string
+}
 
-const Input: React.FC<InputProps> = ({ label = '' }) => {
+const Input = ({ id,
+  label,
+  placeholder,
+  disabled = false,
+  variant = 'outlined',
+  size = 'md',
+  radius = 'md',
+  type = 'text'
+}: InputProps) => {
   return (
     <div>
+      <label htmlFor={id} className={clsx(tailwindThemeClasses.textSizes[size], "block text-gray-700 dark:text-gray-300")}>
+        {label}
+      </label>
       <input
-        type="text"
-        id="disabled-input"
-        aria-label="disabled input"
-        className="mb-6 bg-white-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        value="Disabled input"
-        disabled
-      />
-      <input
-        type="text"
-        id="disabled-input-2"
-        aria-label="disabled input 2"
-        className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        value="Disabled readonly input"
-        disabled
-        readOnly
-      />
+        type={type}
+        id={id}
+        placeholder={placeholder ? placeholder : label}
+        disabled={disabled}
+        className={clsx(variantClass(
+          variant,
+          'slate-800'
+        ), tailwindThemeClasses.paddings[size], tailwindThemeClasses.radius[radius], tailwindThemeClasses.textSizes[size], "block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500")} />
     </div>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

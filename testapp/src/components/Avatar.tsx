@@ -4,8 +4,8 @@ import { tailwindThemeClasses } from '../theme';
 
 interface AvatarProps {
   image: string
-  alt: string
-  children: string
+  alt?: string
+  children?: string
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | undefined
   radius?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | undefined
 }
@@ -25,7 +25,7 @@ const StyledInitials = ({ initials, size = 'md', radius = 'xl' }: StyledInitials
 
 }
 
-const Avatar = ({ image, alt, children, size = "md", radius = "xl" }: AvatarProps) => {
+const Avatar = ({ image, alt="", children="", size = "md", radius = "xl" }: AvatarProps) => {
 
   return (
     <>

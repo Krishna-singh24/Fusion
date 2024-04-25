@@ -14,9 +14,9 @@ const App = () => {
   return (
     <div className='p-32'>
       {/* <Avatar size='xl'>sj</Avatar> */}
-      {/* <Avatar image='/avatar.webp' /> */}
-      {/* <Button color='danger' padding='xs' >nice</Button> */}
-      {/* <Input variant='outlined' label='Some label' radius='xl' /> */}
+      <Avatar image='/avatar.webp' />
+      {/* <Button color='danger' padding='xs'>nice</Button> */}
+      <Input variant='outlined' label='Some label' />
       {/* <Search>search</Search> */}
 
       {/* <Card withBorder>
@@ -39,7 +39,7 @@ const App = () => {
         /> */}
 
       </div>
-      <FileInput></FileInput>
+      {/* <FileInput></FileInput> */}
 
     </div>
   )
