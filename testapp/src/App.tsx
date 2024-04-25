@@ -8,6 +8,7 @@ import Checkbox from './components/Checkbox'
 import Image from './components/Image'
 import Alert from './components/Alert'
 import Avatar from './components/Avatar'
+import FileInput from './components/FileInput'
 
 const App = () => {
   return (
@@ -36,7 +37,9 @@ const App = () => {
         {/* <Alert title='Some title'
           description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
         /> */}
+
       </div>
+      <FileInput></FileInput>
 
     </div>
   )
