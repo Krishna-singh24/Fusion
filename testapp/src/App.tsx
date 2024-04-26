@@ -15,30 +15,30 @@ const App = () => {
     <div className='p-32'>
       {/* <Avatar size='xl'>sj</Avatar> */}
       {/* <Avatar image='/avatar.webp' /> */}
-      {/* <Button color='danger' padding='xs'>nice</Button> */}
       {/* <Input variant='outlined' label='Some label' /> */}
       {/* <Search>search</Search> */}
 
       {/* <Card withBorder>
         <Card.Header>
           <h1 className='text-lg'>Some title</h1>
-        </Card.Header>
-        <Card.Body>
+          </Card.Header>
+          <Card.Body>
           <p className='text-sm'>Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.</p>
-        </Card.Body>
-        <Card.Footer>
+          </Card.Body>
+          <Card.Footer>
           <Button color='danger'>Delete</Button>
-        </Card.Footer>
-      </Card> */}
+          </Card.Footer>
+        </Card> */}
       {/* <Select></Select> */}
       {/* <Checkbox label='Remember Me' color='warning' /> */}
       {/* <Image></Image> */}
       <div style={{ width: 600 }}>
-        <Alert
+        {/* <Alert
           color='success'
           title='Some title'
           description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
-        />
+        /> */}
+        <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
 
       </div>
       {/* <FileInput></FileInput> */}

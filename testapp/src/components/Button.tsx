@@ -8,15 +8,33 @@ interface ButtonProps {
   color?: 'primary' | 'secondary' | 'warning' | 'danger' | 'success' | 'info' | 'light' | 'dark' | undefined;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | undefined;
   padding?: 'xs' | 'sm' | undefined
+  type?: 'submit' | 'reset' | 'button'
+  disabled?: boolean
+  radius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | undefined
+  fullWidth?: boolean
 }
 
 
-const Button = ({ children, variant = 'filled', color = 'primary', padding = 'xs', props }: ButtonProps) => {
+const Button = ({
+  children,
+  variant = 'filled',
+  color = 'primary',
+  size = 'md',
+  type = "submit",
+  disabled = false,
+  radius = 'md',
+  fullWidth = false
+}: ButtonProps) => {
   return (
     <button
-      {...props}
-      style={{  padding: tailwindThemeClasses.paddings[padding] }}
-      className={clsx(tailwindThemeClasses.colors[color],"text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm me-2 mb-2 focus:outline-none dark:focus:ring-blue-800")}>
+      type={type}
+      disabled={disabled}
+      className={clsx(tailwindThemeClasses.backgroundColors[color],
+        tailwindThemeClasses.buttonPaddings[size],
+        tailwindThemeClasses.textSizes[size],
+        tailwindThemeClasses.radius[radius],
+        fullWidth && "w-full",
+        "text-white focus:ring-4 focus:outline-none")}>
       {children}
     </button>
   )

@@ -44,6 +44,14 @@ const tailwindThemeClasses = {
         xl: 'p-6',
     },
 
+    buttonPaddings: {
+        xs: 'px-2 py-1',
+        sm: 'px-3 py-2',
+        md: 'px-4 py-3',
+        lg: 'px-5 py-4',
+        xl: 'px-6 py-5',
+    },
+
     textcolor: {
         primary: 'text-blue-600',
         secondary: 'text-purple-600',
