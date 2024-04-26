@@ -9,6 +9,7 @@ import Image from './components/Image'
 import Alert from './components/Alert'
 import Avatar from './components/Avatar'
 import FileInput from './components/FileInput'
+import Container from './components/Container'
 
 const checkboxOptions = [
   { label: 'Option 1', value: 'Option 1' },
@@ -18,7 +19,7 @@ const checkboxOptions = [
 
 const App = () => {
   return (
-    <div className='p-32'>
+    <div>
       {/* <Avatar size='xl'>sj</Avatar> */}
       {/* <Avatar image='/avatar.webp' /> */}
       {/* <Input variant='outlined' label='Some label' /> */}
@@ -36,9 +37,8 @@ const App = () => {
           </Card.Footer>
         </Card> */}
       {/* <Select></Select> */}
-      <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} />
+      {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
       {/* <Image></Image> */}
-      <div style={{ width: 600 }}>
         {/* <Alert
           color='success'
           title='Some title'
@@ -46,9 +46,14 @@ const App = () => {
         /> */}
         {/* <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button> */}
 
-      </div>
       {/* <FileInput></FileInput> */}
 
+      <Container size='5xl'>
+        {/* <h1 className='text-2xl bg-blue-400'>Hello world</h1> */}
+
+        
+
+      </Container>
     </div>
   )
 }

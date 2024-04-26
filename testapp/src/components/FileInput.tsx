@@ -5,8 +5,6 @@ const FileInput = () => {
     variant: 'default' | 'filled' | 'Unstyled'
     radius?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-
-    
   }
 
 
