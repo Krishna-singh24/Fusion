@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
         <div>
@@ -15,12 +17,12 @@ const Home = () => {
                         </p>
 
                         <div class="mt-8 flex flex-wrap justify-center gap-4">
-                            <a
+                            <Link
                                 class="block w-full rounded bg-green-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
-                                href="#"
+                                to="/documentation"
                             >
                                 Get Started
-                            </a>
+                            </Link>
 
                             <a
                                 class="block w-full rounded px-12 py-3 text-sm font-medium text-green-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-green-500 sm:w-auto"

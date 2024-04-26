@@ -7,10 +7,11 @@ import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Error from './pages/Error'
-import Overview from './pages/Overview'
+import Overview from './pages/docs/Overview'
 import Feedback from './pages/Feedback'
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Documentation from './pages/Documentation'
 
 const App = () => {
 
@@ -26,11 +27,14 @@ const App = () => {
                 <Route path={'/signup'} element={<Signup/>}/>
                 <Route path={'/overview'} element={<Overview/>}/>
                 <Route path={'/feedback'} element={<Feedback/>}/>
+                <Route path={'/documentation'} element={<Documentation/>}/>
                 <Route path={'*'} element={<Error/>}/>
 
             </Routes>
             <Footer/>
         </Router>
+
+        
 
     )
 }
