@@ -74,6 +74,17 @@ const tailwindThemeClasses = {
         dark: 'bg-gray-800'
     },
 
+    accentcolors: {
+        primary: 'blue-600',
+        secondary: 'purple-600',
+        success: 'green-600',
+        danger: 'red-600',
+        warning: 'yellow-600',
+        info: 'blue-600',
+        light: 'slate-300',
+        dark: 'gray-800'
+    },
+
     ringColors: {
         primary: 'ring-blue-300',
         secondary: 'ring-purple-300',

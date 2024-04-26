@@ -10,6 +10,12 @@ import Alert from './components/Alert'
 import Avatar from './components/Avatar'
 import FileInput from './components/FileInput'
 
+const checkboxOptions = [
+  { label: 'Option 1', value: 'Option 1' },
+  { label: 'Option 2', value: 'Option 2' },
+  { label: 'Option 3', value: 'Option 3' }
+];
+
 const App = () => {
   return (
     <div className='p-32'>
@@ -30,7 +36,7 @@ const App = () => {
           </Card.Footer>
         </Card> */}
       {/* <Select></Select> */}
-      {/* <Checkbox label='Remember Me' color='warning' /> */}
+      <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} />
       {/* <Image></Image> */}
       <div style={{ width: 600 }}>
         {/* <Alert
@@ -38,7 +44,7 @@ const App = () => {
           title='Some title'
           description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
         /> */}
-        <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
+        {/* <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button> */}
 
       </div>
       {/* <FileInput></FileInput> */}
