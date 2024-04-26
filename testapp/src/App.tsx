@@ -34,7 +34,9 @@ const App = () => {
       {/* <Checkbox label='Remember Me' color='warning' /> */}
       {/* <Image></Image> */}
       <div style={{ width: 600 }}>
-        <Alert title='Some title'
+        <Alert
+          color='success'
+          title='Some title'
           description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
         />
 

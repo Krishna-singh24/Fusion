@@ -1,10 +1,4 @@
 const tailwindThemeClasses = {
-    colors: {
-        primary: 'bg-cyan-600 text-white',
-        secondary: 'bg-purple-600 text-white',
-        success: 'bg-green-600 text-white'
-    },
-
     radius: {
         none: 'rounded-none',
         xs: 'rounded',
@@ -59,6 +53,17 @@ const tailwindThemeClasses = {
         info: 'text-blue-600',
         light: 'text-slate-300',
         dark: 'text-gray-800'
+    },
+
+    backgroundColors: {
+        primary: 'bg-blue-600',
+        secondary: 'bg-purple-600',
+        success: 'bg-green-600',
+        danger: 'bg-red-600',
+        warning: 'bg-yellow-600',
+        info: 'bg-blue-600',
+        light: 'bg-slate-300',
+        dark: 'bg-gray-800'
     },
 
     ringColors: {
