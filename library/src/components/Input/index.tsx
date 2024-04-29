@@ -1,5 +1,5 @@
 import React from 'react'
-import { colorClasses, tailwindThemeClasses, variantClass } from '../../themes/themes';
+import { colorClasses, tailwindThemeClasses, variantClass } from '../../themes';
 import clsx from 'clsx'
 
 interface InputProps {
@@ -15,7 +15,8 @@ interface InputProps {
   placeholder?: string
 }
 
-const Input = ({ id,
+const Input: React.FC<InputProps> = ({
+  id,
   label,
   placeholder,
   disabled = false,
@@ -23,7 +24,7 @@ const Input = ({ id,
   size = 'md',
   radius = 'md',
   type = 'text'
-}: InputProps) => {
+}) => {
   return (
     <div>
       <label htmlFor={id} className={clsx(tailwindThemeClasses.textSizes[size], "block text-gray-700 dark:text-gray-300")}>
