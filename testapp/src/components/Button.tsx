@@ -12,6 +12,8 @@ interface ButtonProps {
   disabled?: boolean
   radius?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | undefined
   fullWidth?: boolean
+  className?: string
+  onClick?: () => void
 }
 
 
@@ -23,13 +25,18 @@ const Button = ({
   type = "submit",
   disabled = false,
   radius = 'md',
-  fullWidth = false
+  fullWidth = false,
+  className = "",
+  onClick = () => { }
 }: ButtonProps) => {
+
   return (
     <button
+      onClick={onClick}
       type={type}
       disabled={disabled}
-      className={clsx(tailwindThemeClasses.backgroundColors[color],
+      className={clsx(className,
+        tailwindThemeClasses.backgroundColors[color],
         tailwindThemeClasses.buttonPaddings[size],
         tailwindThemeClasses.textSizes[size],
         tailwindThemeClasses.radius[radius],

@@ -1,19 +1,44 @@
-import React from 'react'
-
-const FileInput = () => {
-  interface FileInputProps {
-    variant: 'default' | 'filled' | 'Unstyled'
-    radius?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  }
+import React, { ChangeEvent } from 'react';
 
 
+interface FileInputProps {
+  label?: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  contraints?: string;
+  single?: boolean;
+  style?: React.CSSProperties;
+}
+
+
+const FileInput = ({ label, onChange, contraints, style, single = true }: FileInputProps) => {
   return (
-    <div>
+    <div className='block px-5 py-10 border-2 border-gray-200 text-2xl text-slate-500 text-center' style={style}>
+      {/* centered upload icon */}
 
-      <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="multiple_files">Upload multiple files</label>
-      <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="multiple_files" type="file" multiple />
-
+      <label htmlFor="file-upload" className="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-12 w-12 mx-auto"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          />
+        </svg>
+        {label || 'Upload File'}
+      </label>
+      <input
+        hidden
+        id="file-upload"
+        type="file"
+        accept={contraints || '*'}
+        onChange={single ? (e: ChangeEvent<HTMLInputElement>) => onChange(e.target.files[0]) : (e) => onChange(e)}
+      />
     </div>
   )
 }

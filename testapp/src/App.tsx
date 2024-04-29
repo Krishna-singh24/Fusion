@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './components/Button'
 import Search from './components/Search'
 import Input from './components/Input'
@@ -10,6 +10,14 @@ import Alert from './components/Alert'
 import Avatar from './components/Avatar'
 import FileInput from './components/FileInput'
 import Container from './components/Container'
+import Flex from './components/Flex'
+import Modal from './components/Modal'
+import Pagination from './components/Pagination'
+import Radio from './components/Radio'
+import Slider from './components/Slider'
+import Switch from './components/Switch'
+import Table from './components/Table'
+import Textarea from './components/Textarea'
 
 const checkboxOptions = [
   { label: 'Option 1', value: 'Option 1' },
@@ -17,7 +25,16 @@ const checkboxOptions = [
   { label: 'Option 3', value: 'Option 3' }
 ];
 
+const tableData = [
+  { id: 1, name: 'John Doe', email: 'john@mail.com', phone: '1234567890' },
+  { id: 2, name: 'Jane Doe', email: 'john2@mail.com', phone: '1234567890' },
+  { id: 3, name: 'John Smith', email: 'smith@mail.com', phone: '1234567890' }
+];
+
 const App = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <div>
       {/* <Avatar size='xl'>sj</Avatar> */}
@@ -39,21 +56,60 @@ const App = () => {
       {/* <Select></Select> */}
       {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
       {/* <Image></Image> */}
-        {/* <Alert
+      {/* <Alert
           color='success'
           title='Some title'
           description='Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.'
         /> */}
-        {/* <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button> */}
+      {/* <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button> */}
 
-      {/* <FileInput></FileInput> */}
+      {/* <FileInput
+        label='Upload File'
+        onChange={(file) => console.log(file)}
+        contraints='image/*'
+        style={{width: 300}}
+      /> */}
 
+      {/* <Flex direction='column' alignItems='center'>
+          <h1 className='text-2xl'>Hello World</h1>
+          <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
+        </Flex> */}
       <Container size='5xl'>
-        {/* <h1 className='text-2xl bg-blue-400'>Hello world</h1> */}
+        {/* use modal component */}
 
-        
+        {/* <Modal isOpen={modalOpen} onClose={() => console.log('closed')} title='Some title'>
+          <p className='text-sm'>Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.</p>
+        </Modal>
+
+        <Button className='mt-5' color='primary' onClick={() => {
+          console.log('skjdshj');
+          setModalOpen(true)
+        }}>Open Modal</Button> */}
+
+        {/* <Pagination currentPage={1} totalPages={10} onPageChange={(page) => console.log(page)} /> */}
+
+        {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
+
+        {/* <Search onSearch={v => console.log(v)} /> */}
+
+
+        {/* <Select options={[
+            { value: '1', label: 'Option 1' },
+            { value: '2', label: 'Option 2' },
+            { value: '3', label: 'Option 3' }
+          ]} onChange={(value) => console.log(value)} /> */}
+
+        {/* <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} /> */}
+
+        {/* <Switch checked={true} onChange={(checked) => console.log(checked)} color='red' /> */}
+        {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
+
+        {/* <Textarea label='Some label' /> */}
+
 
       </Container>
+
+      {/* customizable search input library component designed using tailwind */}
     </div>
   )
 }

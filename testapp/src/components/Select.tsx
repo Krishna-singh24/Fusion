@@ -1,22 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Select = () => {
+type Option = {
+  value: string;
+  label: string;
+};
+
+type SelectProps = {
+  options: Option[];
+  onChange: (value: string) => void;
+};
+
+const Select: React.FC<SelectProps> = ({ options, onChange }) => {
+  const [selectedValue, setSelectedValue] = useState('');
+
+  const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = event.target.value;
+    setSelectedValue(value);
+    onChange(value);
+  };
+
   return (
-    <div>
-      
-<form className="max-w-sm mx-auto">
-  <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-  <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-    <option selected>Choose a country</option>
-    <option value="US">United States</option>
-    <option value="CA">Canada</option>
-    <option value="FR">France</option>
-    <option value="DE">Germany</option>
-  </select>
-</form>
+    <select
+      value={selectedValue}
+      onChange={handleSelectChange}
+      className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    >
+      {options.map((option) => (
+        <option key={option.value} value={option.value}>
+          {option.label}
+        </option>
+      ))}
+    </select>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Select
+export default Select;
