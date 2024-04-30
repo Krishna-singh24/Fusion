@@ -1,5 +1,5 @@
 import React from 'react'
-import { cssColors, tailwindThemeClasses } from '../theme'
+import { cssColors, tailwindThemeClasses } from '../../themes/themes'
 import clsx from 'clsx';
 
 interface ButtonProps {

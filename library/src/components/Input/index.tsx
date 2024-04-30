@@ -1,5 +1,5 @@
 import React from 'react'
-import { colorClasses, tailwindThemeClasses, variantClass } from '../../themes';
+import { colorClasses, tailwindThemeClasses, variantClass } from '../../themes/themes';
 import clsx from 'clsx'
 
 interface InputProps {

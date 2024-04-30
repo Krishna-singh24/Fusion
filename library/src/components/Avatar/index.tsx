@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import React from 'react';
-import { tailwindThemeClasses } from '../theme';
+import { tailwindThemeClasses } from '../../themes/themes';
 
 interface AvatarProps {
   image: string

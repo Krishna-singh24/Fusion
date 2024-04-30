@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
+
 const Sidebar = ({ children }) => {
    return (
       <>
@@ -345,7 +346,7 @@ const Sidebar = ({ children }) => {
          >
             <div className="px-8 pt-4">
                {/* Logo */}
-               <a
+               {/* <a
                   className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
                   href="../templates/admin/index.html"
                   aria-label="Preline"
@@ -383,8 +384,9 @@ const Sidebar = ({ children }) => {
                         fill="currentColor"
                      />
                   </svg>
-               </a>
+               </a> */}
                {/* End Logo */}
+               
             </div>
             <nav
                className="hs-accordion-group p-6 w-full flex flex-col flex-wrap"
@@ -437,7 +439,7 @@ const Sidebar = ({ children }) => {
                         Overview
                      </Link>
                   </li>
-                  <li className="hs-accordion" id="users-accordion">
+                  {/* <li className="hs-accordion" id="users-accordion">
                      <button
                         type="button"
                         className="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white"
@@ -459,7 +461,7 @@ const Sidebar = ({ children }) => {
                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
-                        Users
+                        Components
                         <svg
                            className="hs-accordion-active:block ms-auto hidden size-4"
                            xmlns="http://www.w3.org/2000/svg"
@@ -502,7 +504,7 @@ const Sidebar = ({ children }) => {
                                  type="button"
                                  className="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white"
                               >
-                                 Sub Menu 1
+                                 Button
                                  <svg
                                     className="hs-accordion-active:block ms-auto hidden size-4"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -633,7 +635,7 @@ const Sidebar = ({ children }) => {
                            </li>
                         </ul>
                      </div>
-                  </li>
+                  </li> */}
                   <li className="hs-accordion" id="account-accordion">
                      <button
                         type="button"
@@ -663,7 +665,7 @@ const Sidebar = ({ children }) => {
                            <path d="m14.3 16.6 1-.4" />
                            <path d="m20.7 13.8 1-.4" />
                         </svg>
-                        Account
+                        Components
                         <svg
                            className="hs-accordion-active:block ms-auto hidden size-4"
                            xmlns="http://www.w3.org/2000/svg"
@@ -701,9 +703,25 @@ const Sidebar = ({ children }) => {
                            <li>
                               <a
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="#"
+                                 href="/docs/button"
                               >
-                                 Link 1
+                                 Button
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/avatar"
+                              >
+                                 Avatar
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/input"
+                              >
+                                 Input
                               </a>
                            </li>
                            <li>
@@ -711,7 +729,7 @@ const Sidebar = ({ children }) => {
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
                                  href="#"
                               >
-                                 Link 2
+                                 Alert
                               </a>
                            </li>
                            <li>
@@ -719,7 +737,7 @@ const Sidebar = ({ children }) => {
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
                                  href="#"
                               >
-                                 Link 3
+                                 Card
                               </a>
                            </li>
                         </ul>
