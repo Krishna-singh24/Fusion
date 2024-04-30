@@ -1,6 +1,6 @@
 import React from 'react'
+import { cssColors, tailwindThemeClasses } from '../theme'
 import clsx from 'clsx';
-import { tailwindThemeClasses } from '../../themes/themes';
 
 interface ButtonProps {
   children: React.ReactNode
@@ -17,7 +17,7 @@ interface ButtonProps {
 }
 
 
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'filled',
   color = 'primary',
@@ -28,7 +28,7 @@ const Button = ({
   fullWidth = false,
   className = "",
   onClick = () => { }
-}: ButtonProps) => {
+}) => {
 
   return (
     <button

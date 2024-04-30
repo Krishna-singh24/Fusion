@@ -8,7 +8,7 @@ interface ContainerProps {
   size: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
 }
 
-const Container = ({ children, size = "2xl" }: ContainerProps) => {
+const Container: React.FC<ContainerProps> = ({ children, size = "2xl" }) => {
   return (
     <div className={
       clsx(

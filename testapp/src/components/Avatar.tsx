@@ -25,7 +25,7 @@ const StyledInitials = ({ initials, size = 'md', radius = 'xl' }: StyledInitials
 
 }
 
-const Avatar = ({ image, alt="", children="", size = "md", radius = "xl" }: AvatarProps) => {
+const Avatar : React.FC<AvatarProps> = ({ image, alt="", children="", size = "md", radius = "xl" }) => {
 
   return (
     <>

@@ -17,7 +17,7 @@ interface ButtonProps {
 }
 
 
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   children,
   variant = 'filled',
   color = 'primary',
@@ -28,7 +28,7 @@ const Button = ({
   fullWidth = false,
   className = "",
   onClick = () => { }
-}: ButtonProps) => {
+}) => {
 
   return (
     <button

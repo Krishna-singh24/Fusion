@@ -10,7 +10,7 @@ interface FileInputProps {
 }
 
 
-const FileInput = ({ label, onChange, contraints, style, single = true }: FileInputProps) => {
+const FileInput: React.FC<FileInputProps> = ({ label, onChange, contraints, style, single = true }) => {
   return (
     <div className='block px-5 py-10 border-2 border-gray-200 text-2xl text-slate-500 text-center' style={style}>
       {/* centered upload icon */}
