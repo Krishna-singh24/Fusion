@@ -703,9 +703,9 @@ const Sidebar = ({ children }) => {
                            <li>
                               <a
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="/docs/button"
+                                 href="/docs/alert"
                               >
-                                 Button
+                                 Alert
                               </a>
                            </li>
                            <li>
@@ -719,25 +719,49 @@ const Sidebar = ({ children }) => {
                            <li>
                               <a
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="/docs/input"
+                                 href="/docs/button"
                               >
-                                 Input
+                                 Button
                               </a>
                            </li>
                            <li>
                               <a
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="#"
+                                 href="/docs/checkbox"
                               >
-                                 Alert
+                                 Checkbox
                               </a>
                            </li>
                            <li>
                               <a
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="#"
+                                 href="/docs/container"
                               >
-                                 Card
+                                 Container
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/fileinput"
+                              >
+                                 File Input
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/flex"
+                              >
+                                Flex
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/grid"
+                              >
+                                 Grid
                               </a>
                            </li>
                         </ul>
