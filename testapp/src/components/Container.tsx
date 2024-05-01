@@ -6,11 +6,12 @@ import { tailwindThemeClasses } from '../theme'
 interface ContainerProps {
   children: React.ReactNode;
   size: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl';
+  style?: React.CSSProperties;
 }
 
-const Container: React.FC<ContainerProps> = ({ children, size = "2xl" }) => {
+const Container: React.FC<ContainerProps> = ({ children, style, size = "2xl" }) => {
   return (
-    <div className={
+    <div style={style} className={
       clsx(
         tailwindThemeClasses.containerSizes[size],
         'mx-auto'

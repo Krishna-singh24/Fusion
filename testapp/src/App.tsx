@@ -74,7 +74,8 @@ const App = () => {
           <h1 className='text-2xl'>Hello World</h1>
           <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
         </Flex> */}
-      <Container size='5xl'>
+      <Container style={{marginTop: 30}} size='5xl'>
+        <Alert title='Error' description='Login Failed' color='danger'/>
         {/* use modal component */}
 
         {/* <Modal isOpen={modalOpen} onClose={() => console.log('closed')} title='Some title'>

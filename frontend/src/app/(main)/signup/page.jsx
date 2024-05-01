@@ -1,36 +1,26 @@
+'use client';
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { z } from 'zod';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
+import Link from 'next/link';
+import {z} from 'zod';
+import {useForm} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
 import axios from 'axios';
-import toast from 'react-hot-toast';
-import { useRouter } from 'next/router';
 
 const schema = z.object({
     email: z.string().email('Invalid email'),
-    username: z.string().min(6, 'Username must be at least 6 characters'),
+    username:z.string().min(6, 'Username must be at least 6 characters'),
     password: z.string().min(8, 'Password must be at least 8 characters'),
 });
-
 const Signup = () => {
 
-    const router = useRouter();
-
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const {register, handleSubmit, formState: {errors}} = useForm({
         resolver: zodResolver(schema),
     });
 
     const onSubmit = async (data) => {
-        try {
+        try{
             const response = await axios.post('http://localhost:8080/signup', data);
-            toast.success('Signup successful');
-            if (response.status === 200) {
-                console.log(response.data);
-                router.push('/login');
-            } else {
-                toast.error('Signup failed');
-            }
+            console.log(response.data);
         } catch (error) {
             console.error(error);
         }
@@ -43,7 +33,7 @@ const Signup = () => {
             <div class="mx-auto max-w-lg">
                 <h1 class="text-center text-2xl font-bold text-teal-600 sm:text-3xl">Get started today</h1>
 
-
+               
 
                 <form onSubmit={handleSubmit(onSubmit)} action="#" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
                     <p class="text-center text-lg font-medium">Signup your account</p>
@@ -61,7 +51,7 @@ const Signup = () => {
 
                             <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
 
-                            </span>
+            </span>
                         </div>
 
 
@@ -82,7 +72,7 @@ const Signup = () => {
 
                             <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
 
-                            </span>
+            </span>
                         </div>
 
 
@@ -113,7 +103,7 @@ const Signup = () => {
 
                     <p class="text-center text-sm text-gray-500">
                         Already have a account?
-                        <Link to="/login">Log in</Link>
+                        <Link href="/login">Log in</Link>
                     </p>
                 </form>
             </div>

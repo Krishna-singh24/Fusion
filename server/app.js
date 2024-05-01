@@ -1,5 +1,5 @@
 import connectDB from './db/database.js';
-import express, {json, urlencoded} from "express";
+import express, { json, urlencoded } from "express";
 import cors from "cors";
 import authRouter from "./routes/auth.routes.js";
 import feedbackRouter from "./routes/feedback.routes.js";
@@ -15,18 +15,18 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(json());
 app.use(cookieParser());
-app.use(urlencoded({extended: true}));
+app.use(urlencoded({ extended: true }));
 
 app.use("/", authRouter);
 app.use("/", feedbackRouter);
 
 
 connectDB()
-    .then(()=>{
+    .then(() => {
         app.listen(process.env.PORT || 8080, () => {
             console.log(`Server listening at http://localhost:${process.env.PORT}`);
         });
     })
-    .catch((error)=>{
+    .catch((error) => {
         console.log(error);
     })
