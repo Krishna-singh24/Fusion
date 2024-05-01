@@ -1,10 +1,4 @@
 const tailwindThemeClasses = {
-    colors: {
-        primary: 'bg-cyan-600 text-white',
-        secondary: 'bg-purple-600 text-white',
-        success: 'bg-green-600 text-white'
-    },
-
     radius: {
         none: 'rounded-none',
         xs: 'rounded',
@@ -42,12 +36,31 @@ const tailwindThemeClasses = {
         lg: 'text-lg',
         xl: 'text-xl',
     },
+    containerSizes: {
+        xs: 'max-w-xs',
+        sm: 'max-w-sm',
+        md: 'max-w-md',
+        lg: 'max-w-lg',
+        xl: 'max-w-xl',
+        '2xl': 'max-w-2xl',
+        '3xl': 'max-w-3xl',
+        '4xl': 'max-w-4xl',
+        '5xl': 'max-w-5xl'
+    },
     paddings: {
         xs: 'p-1',
         sm: 'p-2',
         md: 'p-3',
         lg: 'p-4',
         xl: 'p-6',
+    },
+
+    buttonPaddings: {
+        xs: 'px-2 py-1',
+        sm: 'px-3 py-2',
+        md: 'px-4 py-3',
+        lg: 'px-5 py-4',
+        xl: 'px-6 py-5',
     },
 
     textcolor: {
@@ -59,6 +72,28 @@ const tailwindThemeClasses = {
         info: 'text-blue-600',
         light: 'text-slate-300',
         dark: 'text-gray-800'
+    },
+
+    backgroundColors: {
+        primary: 'bg-blue-600',
+        secondary: 'bg-purple-600',
+        success: 'bg-green-600',
+        danger: 'bg-red-600',
+        warning: 'bg-yellow-600',
+        info: 'bg-blue-600',
+        light: 'bg-slate-300',
+        dark: 'bg-gray-800'
+    },
+
+    accentcolors: {
+        primary: 'blue-600',
+        secondary: 'purple-600',
+        success: 'green-600',
+        danger: 'red-600',
+        warning: 'yellow-600',
+        info: 'blue-600',
+        light: 'slate-300',
+        dark: 'gray-800'
     },
 
     ringColors: {
