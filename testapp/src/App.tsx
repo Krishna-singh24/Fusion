@@ -75,8 +75,9 @@ const App = () => {
           <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
         </Flex> */}
       <Container style={{marginTop: 30}} size='5xl'>
-        <Alert title='Error' description='Login Failed' color='danger'/>
+        {/* <Alert title='Error' description='Login Failed' color='danger'/> */}
         {/* use modal component */}
+        <Button  color='success' size='md' variant='outlined'> Button</Button>
 
         {/* <Modal isOpen={modalOpen} onClose={() => console.log('closed')} title='Some title'>
           <p className='text-sm'>Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.</p>
