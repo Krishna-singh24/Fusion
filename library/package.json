@@ -1,6 +1,6 @@
 {
   "name": "fusion-reactui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React UI Component Library for React",
   "scripts": {
     "rollup": "rollup -c",

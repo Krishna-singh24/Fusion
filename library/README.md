@@ -1,3 +1,3 @@
-# Digipodium's Library for React File Upload
+# React UI Component Library for faster web development
 
 #### Have fun using it
