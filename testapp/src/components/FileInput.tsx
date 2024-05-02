@@ -37,7 +37,7 @@ const FileInput: React.FC<FileInputProps> = ({ label, onChange, contraints, styl
         id="file-upload"
         type="file"
         accept={contraints || '*'}
-        onChange={single ? (e: ChangeEvent<HTMLInputElement>) => onChange(e.target.files[0]) : (e) => onChange(e)}
+        onChange={onChange}
       />
     </div>
   )
