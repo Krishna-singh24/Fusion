@@ -36,7 +36,7 @@ const Button = () => {
         <p className="text-sm md:text-lg lg:text-xl font-serif">Exapmle 2</p>
         <CopyBlock
             text={` 
-            <Button  color='success' size='md' variant='outlined'> Button</Button>
+            <Button  color='success' size='md'> Button</Button>
              `}
             language={'bash'}
             theme={dracula}
