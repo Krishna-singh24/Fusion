@@ -18,6 +18,7 @@ import Slider from './components/Slider'
 import Switch from './components/Switch'
 import Table from './components/Table'
 import Textarea from './components/Textarea'
+import Grid from './components/Grid'
 
 const checkboxOptions = [
   { label: 'Option 1', value: 'Option 1' },
@@ -54,7 +55,7 @@ const App = () => {
           </Card.Footer>
         </Card> */}
       {/* <Select></Select> */}
-      {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
+     
       {/* <Image></Image> */}
       {/* <Alert
           color='success'
@@ -70,12 +71,21 @@ const App = () => {
         style={{width: 300}}
       /> */}
 
+      <Container style={{ marginTop: 30 }} size='5xl' >
       {/* <Flex direction='column' alignItems='center'>
           <h1 className='text-2xl'>Hello World</h1>
           <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
         </Flex> */}
-      <Container style={{ marginTop: 30 }} size='5xl' >
-      <Avatar image='/avatar.webp'size='xl' />
+         {/* <Input variant='outlined' label='Some label' /> */}
+        {/* <Grid children={undefined}></Grid> */}
+      {/* <Avatar image='/avatar.webp'size='xl' /> */}
+      {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
+       {/* <FileInput
+        label='Upload File'
+        onChange={(file) => console.log(file)}
+        contraints='image/*'
+        style={{width: 250}}
+      /> */}
         {/* <Alert title='Error' description='Login Failed' color='danger'/> */}
         {/* use modal component */}
         {/* <Button  color='success' size='md' variant='outlined'> Button</Button> */}
@@ -89,7 +99,7 @@ const App = () => {
           setModalOpen(true)
         }}>Open Modal</Button> */}
 
-        {/* <Pagination currentPage={1} totalPages={10} onPageChange={(page) => console.log(page)} /> */}
+        <Pagination currentPage={2} totalPages={10} onPageChange={(page) => console.log(page)} />
 
         {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
 
