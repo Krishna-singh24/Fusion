@@ -28,8 +28,8 @@ const TextArea = () => {
       </div>
       <br />
 
-      <div>
-        <p> A basic Textarea</p>
+      <div style={{border:'1px solid gray'}} className=' bg-gray-200 p-4 md:w-1/2 lg:w-1/3"'>
+        <p class="text-lg md:text-xl lg:text-2xl font-serif"> A basic Textarea</p>
         <br />
         <CopyBlock
           text={` 
