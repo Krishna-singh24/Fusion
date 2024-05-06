@@ -16,15 +16,32 @@ const TextArea = () => {
         <br />
         <CopyBlock
           text={` 
-            import Textarea from './components/Textarea'
+            import {Textarea} from './components/Textarea'
              `}
           language={'bash'}
           theme={dracula}
           wrapLines
         />
+        <br />
+        
         
       </div>
       <br />
+
+      <div>
+        <p> A basic Textarea</p>
+        <br />
+        <CopyBlock
+          text={` 
+          <Textarea label='Some label' />
+             `}
+          language={'bash'}
+          theme={dracula}
+          wrapLines
+        />
+        <br />
+        <img src="/textarea/example1.png" alt="" />
+      </div>
     </div>
   )
 }

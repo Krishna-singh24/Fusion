@@ -333,7 +333,7 @@ const Sidebar = ({ children }) => {
          {/* Sidebar */}
          <div
             id="application-sidebar"
-            className="hs-overlay [--auto-close:lg]
+            className="overflow-auto hs-overlay [--auto-close:lg]
    hs-overlay-open:translate-x-0
    -translate-x-full transition-all duration-300 transform
    w-[260px]
@@ -830,10 +830,26 @@ const Sidebar = ({ children }) => {
                                  Switch
                               </Link>
                            </li>
+                           <li>
+                              <Link
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/table"
+                              >
+                                 Table
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/textarea"
+                              >
+                                 Textarea
+                              </Link>
+                           </li>
                         </ul>
                      </div>
                   </li>
-                  <li className="hs-accordion" id="projects-accordion">
+                  {/* <li className="hs-accordion" id="projects-accordion">
                      <button
                         type="button"
                         className="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 dark:hs-accordion-active:text-white"
@@ -914,8 +930,8 @@ const Sidebar = ({ children }) => {
                            </li>
                         </ul>
                      </div>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                      <a
                         className="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
                         href="#"
@@ -945,8 +961,8 @@ const Sidebar = ({ children }) => {
                         </svg>
                         Calendar
                      </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                      <a
                         className="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
                         href="#"
@@ -968,7 +984,7 @@ const Sidebar = ({ children }) => {
                         </svg>
                         Documentation
                      </a>
-                  </li>
+                  </li> */}
                </ul>
             </nav>
          </div>

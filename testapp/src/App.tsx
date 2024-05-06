@@ -99,9 +99,9 @@ const App = () => {
           setModalOpen(true)
         }}>Open Modal</Button> */}
 
-        <Pagination currentPage={2} totalPages={10} onPageChange={(page) => console.log(page)} />
+        {/* <Pagination currentPage={2} totalPages={10} onPageChange={(page) => console.log(page)} /> */}
 
-        {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
+        {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} checked={''} /> */}
 
         {/* <Search onSearch={v => console.log(v)} /> */}
 
@@ -117,7 +117,7 @@ const App = () => {
         {/* <Switch checked={true} onChange={(checked) => console.log(checked)} color='red' /> */}
         {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
 
-        {/* <Textarea label='Some label' /> */}
+        <Textarea label='Some label' />
 
 
       </Container>
