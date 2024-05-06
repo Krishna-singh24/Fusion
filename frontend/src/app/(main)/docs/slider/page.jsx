@@ -11,7 +11,7 @@ const Slider = () => {
       </div>
       <br />
       <div>
-        <p class="text-lg md:text-xl lg:text-2xl font-serif">Import the Pagination component</p>
+        <p class="text-lg md:text-xl lg:text-2xl font-serif">Import the Slider component</p>
         <br />
         <CopyBlock
           text={` 

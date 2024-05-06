@@ -386,7 +386,7 @@ const Sidebar = ({ children }) => {
                   </svg>
                </a> */}
                {/* End Logo */}
-               
+
             </div>
             <nav
                className="hs-accordion-group p-6 w-full flex flex-col flex-wrap"
@@ -753,7 +753,7 @@ const Sidebar = ({ children }) => {
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
                                  href="/docs/flex"
                               >
-                                Flex
+                                 Flex
                               </Link>
                            </li>
                            <li>
@@ -768,10 +768,10 @@ const Sidebar = ({ children }) => {
                               <Link
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
                                  href="/docs/input"
-                                 >
+                              >
                                  Input
                               </Link>
-                              </li>
+                           </li>
 
 
                            <li>
@@ -806,12 +806,28 @@ const Sidebar = ({ children }) => {
                                  Search
                               </Link>
                            </li>
-                              <li>
+                           <li>
                               <Link
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
                                  href="/docs/select"
                               >
                                  Select
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/slider"
+                              >
+                                 Slider
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
+                                 href="/docs/switch"
+                              >
+                                 Switch
                               </Link>
                            </li>
                         </ul>
