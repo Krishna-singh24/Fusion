@@ -5,6 +5,7 @@ import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const schema = z.object({
     email: z.string().email('Invalid email'),
@@ -20,8 +21,10 @@ const Signup = () => {
     const onSubmit = async (data) => {
         try{
             const response = await axios.post('http://localhost:8080/signup', data);
+            toast.success('Signin successful');
             console.log(response.data);
         } catch (error) {
+            toast.error('Signin Failed');
             console.error(error);
         }
     }
