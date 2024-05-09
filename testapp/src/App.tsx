@@ -55,7 +55,7 @@ const App = () => {
           </Card.Footer>
         </Card> */}
       {/* <Select></Select> */}
-     
+
       {/* <Image></Image> */}
       {/* <Alert
           color='success'
@@ -72,15 +72,15 @@ const App = () => {
       /> */}
 
       <Container style={{ marginTop: 30 }} size='5xl' >
-      {/* <Flex direction='column' alignItems='center'>
+        {/* <Flex direction='column' alignItems='center'>
           <h1 className='text-2xl'>Hello World</h1>
           <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
         </Flex> */}
-         {/* <Input variant='outlined' label='Some label' /> */}
+        {/* <Input variant='outlined' label='Some label' /> */}
         {/* <Grid children={undefined}></Grid> */}
-      {/* <Avatar image='/avatar.webp'size='xl' /> */}
-      {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
-       {/* <FileInput
+        {/* <Avatar image='/avatar.webp'size='xl' /> */}
+        {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
+        {/* <FileInput
         label='Upload File'
         onChange={(file) => console.log(file)}
         contraints='image/*'
@@ -90,14 +90,50 @@ const App = () => {
         {/* use modal component */}
         {/* <Button  color='success' size='md' variant='outlined'> Button</Button> */}
 
-        {/* <Modal isOpen={modalOpen} onClose={() => console.log('closed')} title='Some title'>
-          <p className='text-sm'>Laborum fuga assumenda in non sunt. Quam voluptates est molestiae quis. Amet tempore eveniet perferendis voluptas laudantium vel voluptates. Ut et eos hic nam consequatur.</p>
-        </Modal>
+        <Modal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          // headerContent={<p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">Featured</p>}
+          bodyContent={<>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white">
+              Modal title
+            </h3>
+            <p className="mt-2 text-gray-500 dark:text-neutral-400">
+              With supporting text below as a natural lead-in to additional content.
+            </p>
+            <a
+              className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400"
+              href="#"
+            >
+              Card link
+              <svg
+                className="flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+          </>}
+
+          // footerContent={
+          //   <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+          //     Last updated 5 mins ago
+          //   </p>
+          // }
+        />
 
         <Button className='mt-5' color='primary' onClick={() => {
           console.log('skjdshj');
           setModalOpen(true)
-        }}>Open Modal</Button> */}
+        }}>Open Modal</Button>
 
         {/* <Pagination currentPage={2} totalPages={10} onPageChange={(page) => console.log(page)} /> */}
 
@@ -117,7 +153,7 @@ const App = () => {
         {/* <Switch checked={true} onChange={(checked) => console.log(checked)} color='red' /> */}
         {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
 
-        <Textarea label='Some label' />
+        {/* <Textarea label='Some label' /> */}
 
 
       </Container>
