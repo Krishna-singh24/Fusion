@@ -35,6 +35,8 @@ const tableData = [
 const App = () => {
 
   const [modalOpen, setModalOpen] = useState(false);
+  const [page, setPage] = useState(1);
+  const [checked, setChecked] = useState(false);
 
   return (
     <div>
@@ -72,10 +74,10 @@ const App = () => {
       /> */}
 
       <Container style={{ marginTop: 30 }} size='5xl' >
-        {/* <Flex direction='column' alignItems='center'>
+        <Flex direction='row' justifyContent='' alignItems='center'>
           <h1 className='text-2xl'>Hello World</h1>
-          <Button color='success' padding='xs' radius='xl' fullWidth>Lorem ipsum dolor sit amet.</Button>
-        </Flex> */}
+          <Button color='success' padding='xs' radius='xl' >Lorem ipsum dolor sit amet.</Button>
+        </Flex>
         {/* <Input variant='outlined' label='Some label' /> */}
         {/* <Grid children={undefined}></Grid> */}
         {/* <Avatar image='/avatar.webp'size='xl' /> */}
@@ -123,11 +125,11 @@ const App = () => {
             </a>
           </>}
 
-          // footerContent={
-          //   <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-          //     Last updated 5 mins ago
-          //   </p>
-          // }
+        // footerContent={
+        //   <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+        //     Last updated 5 mins ago
+        //   </p>
+        // }
         />
 
         <Button className='mt-5' color='primary' onClick={() => {
@@ -135,7 +137,7 @@ const App = () => {
           setModalOpen(true)
         }}>Open Modal</Button>
 
-        {/* <Pagination currentPage={2} totalPages={10} onPageChange={(page) => console.log(page)} /> */}
+        {/* <Pagination currentPage={page} totalPages={10} onPageChange={setPage} /> */}
 
         {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} checked={''} /> */}
 
@@ -150,7 +152,10 @@ const App = () => {
 
         {/* <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} /> */}
 
-        {/* <Switch checked={true} onChange={(checked) => console.log(checked)} color='red' /> */}
+        <Switch checked={checked} onChange={setChecked} color='red' />
+        {
+          checked ? <p>Checked</p> : <p>Not Checked</p>
+        }
         {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
 
         {/* <Textarea label='Some label' /> */}
