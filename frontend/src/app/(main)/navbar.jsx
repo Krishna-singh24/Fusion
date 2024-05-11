@@ -25,31 +25,20 @@ const Navbar = () => {
                         <li>
                            <Link class="text-gray-500 transition hover:text-gray-500/75" href="/"> Home </Link>
                         </li>
-                        <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75"
-                              href="/about"> About </Link>
-                        </li>
+                        
+
+                       
 
                         <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75"
-                              href="/Contact"> Contact </Link>
-                        </li>
-
-                        <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75" href="/documentation"> Docs </Link>
+                           <Link class="text-gray-500 transition hover:text-gray-500/75" href="/docs/getting-started"> Docs </Link>
                         </li>
 
                         <li>
                            <Link class="text-gray-500 transition hover:text-gray-500/75" href="/feedback"> Feedback </Link>
                         </li>
 
-                        <li>
-                           <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-                        </li>
+                       
 
-                        <li>
-                           <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
-                        </li>
                      </ul>
                   </nav>
                </div>
