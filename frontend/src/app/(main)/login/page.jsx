@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import toast from 'react-hot-toast';
+import useAppContext from '@/context/AppContext';
 
 const schema = z.object({
     email: z.string().email('Invalid email'),
@@ -13,18 +14,20 @@ const schema = z.object({
 });
 const Login = () => {
 
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { register, handleSubmit, formState: { errors },reset } = useForm({
         resolver: zodResolver(schema),
     });
 
-    
+    const { setLoggedIn } = useAppContext();
 
     const onSubmit = async (data) => {
         const response = await axios.post('http://localhost:8080/login', data);
         toast.success('Login successful');
         console.log(response.status);
         console.log(response.data);
-        sessionStorage.setItem('token', response.data.token);
+        localStorage.setItem('token', response.data.token);
+        setLoggedIn(true);
+        reset();
     }
     return (
 

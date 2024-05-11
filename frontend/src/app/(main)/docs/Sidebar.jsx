@@ -16,7 +16,7 @@ const Sidebar = ({ children }) => {
                   <a
                      className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
                      href="../templates/admin/index.html"
-                     aria-label="Preline"
+                     aria-label="Fusion"
                   >
                      <svg
                         className="w-28 h-auto"

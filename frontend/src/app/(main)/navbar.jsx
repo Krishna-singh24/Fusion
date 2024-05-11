@@ -1,8 +1,36 @@
 'use client';
+import useAppContext from '@/context/AppContext';
 import Link from 'next/link';
 import React from 'react'
 
 const Navbar = () => {
+
+   const { loggedIn, logout } = useAppContext();
+
+   const showLoginOptions = () => {
+      if (loggedIn) {
+         return <button onClick={logout} class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow" >Logout</button>
+      } else {
+         return <div class="sm:flex sm:gap-4">
+            <Link
+               class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+               href="/login"
+            >
+               Login
+            </Link>
+
+            <div class="hidden sm:flex">
+               <Link
+                  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                  href="/signup"
+               >
+                  Signup
+               </Link>
+            </div>
+         </div>
+      }
+   }
+
    return (
       <header class="bg-white">
          <div class="mx-auto max-w-screen px-4 sm:px-6 lg:px-8">
@@ -23,44 +51,25 @@ const Navbar = () => {
                   <nav aria-label="Global">
                      <ul class="flex items-center gap-6 text-sm">
                         <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75" href="/"> Home </Link>
-                        </li>
-                        
-
-                       
-
-                        <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75" href="/docs/getting-started"> Docs </Link>
+                           <Link class="text-black-500 transition hover:text-gray-500/75" href="/"> Home </Link>
                         </li>
 
                         <li>
-                           <Link class="text-gray-500 transition hover:text-gray-500/75" href="/feedback"> Feedback </Link>
+                           <Link class="text-black-500 transition hover:text-gray-500/75" href="/docs/getting-started"> Docs </Link>
                         </li>
 
-                       
+                        <li>
+                           <Link class="text-black-500 transition hover:text-gray-500/75" href="/feedback"> Feedback </Link>
+                        </li>
+
+
 
                      </ul>
                   </nav>
                </div>
 
                <div class="flex items-center gap-4">
-                  <div class="sm:flex sm:gap-4">
-                     <Link
-                        class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                        href="/login"
-                     >
-                        Login
-                     </Link>
-
-                     <div class="hidden sm:flex">
-                        <Link
-                           class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                           href="/signup"
-                        >
-                           Signup
-                        </Link>
-                     </div>
-                  </div>
+                  {showLoginOptions()}
 
                   <div class="block md:hidden">
                      <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
