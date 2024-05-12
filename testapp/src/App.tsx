@@ -20,10 +20,10 @@ import Table from './components/Table'
 import Textarea from './components/Textarea'
 import Grid from './components/Grid'
 
-const checkboxOptions = [
-  { label: 'Option 1', value: 'Option 1' },
-  { label: 'Option 2', value: 'Option 2' },
-  { label: 'Option 3', value: 'Option 3' }
+const radioOptions = [
+  { label: 'Radio 1', value: 'Option 1' },
+  { label: 'Radio 2', value: 'Option 2' },
+  { label: 'Radio 3', value: 'Option 3' }
 ];
 
 const tableData = [
@@ -74,14 +74,14 @@ const App = () => {
       /> */}
 
       <Container style={{ marginTop: 30 }} size='5xl' >
-        <Flex direction='row' justifyContent='' alignItems='center'>
+        {/* <Flex direction='row' justifyContent='' alignItems='center'>
           <h1 className='text-2xl'>Hello World</h1>
           <Button color='success' padding='xs' radius='xl' >Lorem ipsum dolor sit amet.</Button>
-        </Flex>
+        </Flex> */}
         {/* <Input variant='outlined' label='Some label' /> */}
         {/* <Grid children={undefined}></Grid> */}
         {/* <Avatar image='/avatar.webp'size='xl' /> */}
-        <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} />
+
         {/* <FileInput
         label='Upload File'
         onChange={(file) => console.log(file)}
@@ -92,7 +92,7 @@ const App = () => {
         {/* use modal component */}
         {/* <Button  color='success' size='md' variant='outlined'> Button</Button> */}
 
-        <Modal
+        {/* <Modal
           isOpen={modalOpen}
           onClose={() => setModalOpen(false)}
           // headerContent={<p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">Featured</p>}
@@ -135,27 +135,29 @@ const App = () => {
         <Button className='mt-5' color='primary' onClick={() => {
           console.log('skjdshj');
           setModalOpen(true)
-        }}>Open Modal</Button>
+        }}>Open Modal</Button> */}
 
         {/* <Pagination currentPage={page} totalPages={10} onPageChange={setPage} /> */}
 
-        {/* <Radio options={checkboxOptions} onChange={(value) => console.log(value)} checked={''} /> */}
+        {/* <Radio options={radioOptions} onChange={(value) => console.log(value)} checked={''} /> */}
 
-        {/* <Search onSearch={v => console.log(v)} /> */}
+        {/* <Search onSearch={v => console.log(v)} placeholder={''} /> */}
+
+        {/* <Checkbox options={checkboxOptions} onChange={(value) => console.log(value)} /> */}
 
 
-        <Select options={[
+        {/* <Select options={[
             { value: '1', label: 'Option 1' },
             { value: '2', label: 'Option 2' },
             { value: '3', label: 'Option 3' }
-          ]} onChange={(value) => console.log(value)} />
+          ]} onChange={(value) => console.log(value)} /> */}
 
         {/* <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} /> */}
 
-        {/* <Switch checked={checked} onChange={setChecked} color='red' />
+        <Switch checked={checked} onChange={setChecked} color='red' label={' Label '} />
         {
           checked ? <p>Checked</p> : <p>Not Checked</p>
-        } */}
+        }
         {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
 
         {/* <Textarea label='Some label' /> */}

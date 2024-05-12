@@ -16,12 +16,33 @@ const Radio = () => {
         <br />
         <CopyBlock
           text={` 
-            import Radio from './components/Radio'
+            import {Radio} from './components/Radio'
              `}
           language={'bash'}
           theme={dracula}
           wrapLines
         />
+      </div>
+      <br />
+
+      <div>
+        <p class="text-lg md:text-xl lg:text-2xl font-serif">Use the Radio component</p>
+        <br />
+        <CopyBlock
+          text={` 
+          const radioOptions = [
+            { label: 'Option 1', value: 'Option 1' },
+            { label: 'Option 2', value: 'Option 2' },
+            { label: 'Option 3', value: 'Option 3' }
+          ];
+          
+          <Radio options={radioOptions} onChange={(value) => console.log(value)} />
+           `}
+          language={'bash'}
+          theme={dracula}
+          wrapLines
+        />
+        <img src="/radio/ex1.png" alt="" />
       </div>
     </div>
   )

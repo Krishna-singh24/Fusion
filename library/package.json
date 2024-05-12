@@ -1,6 +1,6 @@
 {
   "name": "fusion-reactui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React UI Component Library for React",
   "scripts": {
     "rollup": "rollup -c",
@@ -13,7 +13,7 @@
     "Digipodium",
     "Digipod"
   ],
-  "author": "Mohammad Mubassir",
+  "author": "Krishna Singh",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",

@@ -18,11 +18,11 @@ const Checkbox = () => {
         </div>
 
       <div >
-      <p className="text-sm md:text-lg lg:text-xl font-serif">Import the Checkbox component</p>
+       <p className="text-sm md:text-lg lg:text-xl font-serif">Import the Checkbox component</p>
         <br />
         <CopyBlock
             text={` 
-            import Checkbox from './components/Checkbox'
+            import {Checkbox} from './components/Checkbox'
              `}
             language={'bash'}
             theme={dracula}
@@ -30,9 +30,9 @@ const Checkbox = () => {
           />
           <br />
           <div>
-          <p className="text-sm md:text-lg lg:text-xl font-serif">Use the Checkbox component</p>
+           <p className="text-sm md:text-lg lg:text-xl font-serif">Use the Checkbox component</p>
            <br />
-          <CopyBlock
+           <CopyBlock
             text={` 
             const checkboxOptions = [
               { label: 'Option 1', value: 'Option 1' },
@@ -46,8 +46,10 @@ const Checkbox = () => {
             theme={dracula}
             wrapLines
             />
+
+            <img src="/checkbox/ex1.png" alt="" />
           </div>
-      </div>
+       </div>
         
       
     </div>
