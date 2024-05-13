@@ -139,7 +139,8 @@ const App = () => {
 
         {/* <Pagination currentPage={page} totalPages={10} onPageChange={setPage} /> */}
 
-        {/* <Radio options={radioOptions} onChange={(value) => console.log(value)} checked={''} /> */}
+        <Radio name='gender' label='Male'/>
+        <Radio name='gender' label='Female'/>
 
         {/* <Search onSearch={v => console.log(v)} placeholder={''} /> */}
 
@@ -153,11 +154,11 @@ const App = () => {
           ]} onChange={(value) => console.log(value)} /> */}
 
         {/* <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} /> */}
-
+{/* 
         <Switch checked={checked} onChange={setChecked} color='red' label={' Label '} />
         {
           checked ? <p>Checked</p> : <p>Not Checked</p>
-        }
+        } */}
         {/* <Table data={tableData} columns={['id', 'name', 'email', 'phone']} /> */}
 
         {/* <Textarea label='Some label' /> */}
