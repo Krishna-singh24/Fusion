@@ -7,7 +7,7 @@ const Pagination = () => {
     <div>
       <div>
          <h4 class="text-xl md:text-2xl lg:text-3xl font-mono ">Pagination</h4>
-         <p class="mb-2 text-gray-500 dark:text-gray-400 ">Pagination is a utility class that allows you to create a pagination layout that is responsive and easy to use.  </p>
+         <p class="mb-2 text-black-500 dark:text-gray-400 ">The pagination component can be used to navigate across a series of content and data sets for various pages such as blog posts, products, and more. You can use multiple variants of this component with or without icons and even for paginating table data entries..  </p>
       </div>
       <br />
       <div>
@@ -15,7 +15,7 @@ const Pagination = () => {
         <br />
         <CopyBlock
           text={` 
-            import Pagination from './components/Pagination'
+            import {Pagination} from './components/Pagination'
              `}
           language={'bash'}
           theme={dracula}

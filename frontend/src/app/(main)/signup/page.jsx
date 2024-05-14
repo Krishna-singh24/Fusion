@@ -14,7 +14,7 @@ const schema = z.object({
 });
 const Signup = () => {
 
-    const {register, handleSubmit, formState: {errors}} = useForm({
+    const {register, handleSubmit, formState: {errors} ,reset} = useForm({
         resolver: zodResolver(schema),
     });
 
@@ -23,6 +23,7 @@ const Signup = () => {
             const response = await axios.post('http://localhost:8080/signup', data);
             toast.success('Signin successful');
             console.log(response.data);
+            reset();
         } catch (error) {
             toast.error('Signin Failed');
             console.error(error);

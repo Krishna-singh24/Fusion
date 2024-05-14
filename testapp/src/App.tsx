@@ -79,7 +79,9 @@ const App = () => {
           <Button color='success' padding='xs' radius='xl' >Lorem ipsum dolor sit amet.</Button>
         </Flex> */}
         {/* <Input variant='outlined' label='Some label' /> */}
-        {/* <Grid children={undefined}></Grid> */}
+        {/* <Grid>
+          <p> para</p>
+        </Grid> */}
         {/* <Avatar image='/avatar.webp'size='xl' /> */}
 
         {/* <FileInput
@@ -137,10 +139,10 @@ const App = () => {
           setModalOpen(true)
         }}>Open Modal</Button> */}
 
-        {/* <Pagination currentPage={page} totalPages={10} onPageChange={setPage} /> */}
+        <Pagination currentPage={page} totalPages={10} onPageChange={setPage} />
 
-        <Radio name='gender' label='Male'/>
-        <Radio name='gender' label='Female'/>
+        {/* <Radio name='gender' label='Male'/>
+        <Radio name='gender' label='Female'/> */}
 
         {/* <Search onSearch={v => console.log(v)} placeholder={''} /> */}
 
@@ -153,7 +155,7 @@ const App = () => {
             { value: '3', label: 'Option 3' }
           ]} onChange={(value) => console.log(value)} /> */}
 
-        {/* <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} /> */}
+        <Slider min={0} max={100} value={50} onChange={(value) => console.log(value)} />
 {/* 
         <Switch checked={checked} onChange={setChecked} color='red' label={' Label '} />
         {

@@ -11,7 +11,7 @@ const schema = z.object({
 });
 const Feedback = () => {
 
-    const {register, handleSubmit, formState: {errors}} = useForm({
+    const {register, handleSubmit, formState: {errors},reset} = useForm({
         resolver: zodResolver(schema),
     });
 
@@ -19,6 +19,7 @@ const Feedback = () => {
         console.log(data)
         const response = await axios.post('http://localhost:8080/feedback', data);
         console.log(response.data);
+        reset();
     }
 
   return (

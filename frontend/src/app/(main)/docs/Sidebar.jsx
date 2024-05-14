@@ -13,7 +13,7 @@ const Sidebar = ({ children }) => {
             >
                <div className="me-5 lg:me-0 lg:hidden">
                   {/* Logo */}
-                  <a
+                  {/* <a
                      className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
                      href="../templates/admin/index.html"
                      aria-label="Fusion"
@@ -51,7 +51,7 @@ const Sidebar = ({ children }) => {
                            fill="currentColor"
                         />
                      </svg>
-                  </a>
+                  </a> */}
                   {/* End Logo */}
                </div>
                <div className="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
@@ -77,7 +77,7 @@ const Sidebar = ({ children }) => {
                         </svg>
                      </button>
                   </div>
-                  <div className="hidden sm:block">
+                  {/* <div className="hidden sm:block">
                      <label htmlFor="icon" className="sr-only">
                         Search
                      </label>
@@ -107,9 +107,9 @@ const Sidebar = ({ children }) => {
                            placeholder="Search"
                         />
                      </div>
-                  </div>
+                  </div> */}
                   <div className="flex flex-row items-center justify-end gap-2">
-                     <button
+                     {/* <button
                         type="button"
                         className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700"
                      >
@@ -128,8 +128,8 @@ const Sidebar = ({ children }) => {
                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
                         </svg>
-                     </button>
-                     <button
+                     </button> */}
+                     {/* <button
                         type="button"
                         className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700"
                         data-hs-offcanvas="#hs-offcanvas-right"
@@ -148,8 +148,8 @@ const Sidebar = ({ children }) => {
                         >
                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                         </svg>
-                     </button>
-                     <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
+                     </button> */}
+                     {/* <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
                         <button
                            id="hs-dropdown-with-header"
                            type="button"
@@ -264,7 +264,7 @@ const Sidebar = ({ children }) => {
                               </a>
                            </div>
                         </div>
-                     </div>
+                     </div> */}
                   </div>
                </div>
             </nav>
@@ -756,14 +756,7 @@ const Sidebar = ({ children }) => {
                                  Flex
                               </Link>
                            </li>
-                           <li>
-                              <Link
-                                 className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"
-                                 href="/docs/grid"
-                              >
-                                 Grid
-                              </Link>
-                           </li>
+                           
                            <li>
                               <Link
                                  className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300"

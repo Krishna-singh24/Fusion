@@ -45,18 +45,10 @@ const Home = () => {
               <h2 class="text-3xl font-bold sm:text-4xl">Find the best components</h2>
 
               <p class="mt-4 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero aliquid sint
-                distinctio
-                iure ipsum cupiditate? Quis, odit assumenda? Deleniti quasi inventore, libero reiciendis
-                minima aliquid tempora. Obcaecati, autem.
+              This library offers reusable UI building blocks like buttons, menus, and forms, allowing developers to build consistent and efficient user interfaces.
               </p>
 
-              <a
-                href="#"
-                class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-              >
-                Get Started Today
-              </a>
+              
             </div>
 
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -85,8 +77,10 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Easy to use</h2>
-
+                <h2 class="mt-2 font-bold text-green-500">Easy to use</h2>
+                <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+                Simply import the components you need and start building beautiful interfaces.
+                </p>
 
               </a>
 
@@ -115,10 +109,10 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Accountant</h2>
+                <h2 class="mt-2 font-bold text-green-500">Increased development efficiency</h2>
 
                 <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
+                Save time by using pre-built components instead of creating them from scratch.
                 </p>
               </a>
 
@@ -147,10 +141,10 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Accountant</h2>
+                <h2 class="mt-2 font-bold text-green-500">Reusable UI components</h2>
 
                 <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
+                Buttons, menus, forms, and more, all built with React for easy integration.
                 </p>
               </a>
 
@@ -179,10 +173,10 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Accountant</h2>
+                <h2 class="mt-2 font-bold text-green-500">Consistent user interfaces</h2>
 
                 <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
+                Ensure a uniform look and feel across your applications.
                 </p>
               </a>
 
@@ -211,14 +205,14 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Accountant</h2>
+                <h2 class="mt-2 font-bold text-green-500">Customizable</h2>
 
                 <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur.
+                Tailor components to your needs with customizable styles and configurations.
                 </p>
               </a>
 
-              <a
+              {/* <a
                 class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
                 href="#"
               >
@@ -243,12 +237,12 @@ const Home = () => {
                   </svg>
                 </span>
 
-                <h2 class="mt-2 font-bold">Accountant</h2>
+                <h2 class="mt-2 font-bold"></h2>
 
                 <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                   Lorem ipsum dolor sit amet consectetur.
                 </p>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -257,11 +251,10 @@ const Home = () => {
       <footer class="bg-white">
             <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
                 <div class="text-center">
-                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Customise Your Product</h2>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">Customise your UI with <br />seamless efficiency</h2>
 
-                    <p class="mx-auto mt-4 max-w-sm text-gray-500">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores ipsum eos temporibus
-                        ea nihil.
+                    <p class="mx-auto mt-4 max-w-sm text-black-500">
+                        FusionUI is a collection of React components designed to help developers build beautiful, consistent user interfaces with ease.
                     </p>
 
                     <a

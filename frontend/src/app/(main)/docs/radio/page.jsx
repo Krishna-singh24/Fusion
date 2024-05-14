@@ -30,13 +30,8 @@ const Radio = () => {
         <br />
         <CopyBlock
           text={` 
-          const radioOptions = [
-            { label: 'Option 1', value: 'Option 1' },
-            { label: 'Option 2', value: 'Option 2' },
-            { label: 'Option 3', value: 'Option 3' }
-          ];
-          
-          <Radio options={radioOptions} onChange={(value) => console.log(value)} />
+          <Radio name='gender' label='Male'/>
+          <Radio name='gender' label='Female'/>
            `}
           language={'bash'}
           theme={dracula}
